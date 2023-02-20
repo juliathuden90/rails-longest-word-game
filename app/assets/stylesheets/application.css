@@ -17,3 +17,19 @@
  .container {
     width: 300px;
  }
+
+ .letter_box {
+  background-color: blue;
+  color: white;
+  padding-left: 1em;
+  padding-right: 1em;
+  text-align: justify;
+  border-radius: 2px;
+  border: 1px solid grey;
+ }
+
+ .flex-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ }

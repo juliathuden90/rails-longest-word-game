@@ -1,8 +1,12 @@
 <h1>New Game</h1>
 
-<% @letters.each do |letter| %>
-  <%= letter %>
-<% end %>
+<div class="flex-box">
+  <% @letters.each do |letter| %>
+    <div class="letter_box">
+      <p> <%= letter %> </p>
+    </div>
+  <% end %>
+</div>
 
 <% @start_time = Time.now %>
 <form action="score" method="post" data-turbo="false" class="form-inline">

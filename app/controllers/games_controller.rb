@@ -38,7 +38,7 @@ class GamesController < ApplicationController
 
   def compute_score(attempt, start_time, end_time)
     time = end_time - start_time
-    score = (attempt.length * 10) - time
+    score = (attempt.length * 10) - time.round
     return score
   end
 
